@@ -213,18 +213,6 @@ app.post('/crocoanonim/creazaplangere', checkAuth, async (req, res) => {
     });
 
     // Trimitere email asincron (fără a aștepta)
-    (async () => {
-      try {
-        const url = `http://localhost:3000/crocoanonim/Plangere/${newPlangere.id_plangere}`;
-        await sendEmail(
-          'braha.adrian.costin@gmail.com',
-          `Topic nou pe crocoanonim: ${titlu}`,
-          `Intra pe ${url} pentru detalii. Crocodilul spune: ${descriere.trim()}`
-        );
-      } catch (err) {
-        console.error('Email send error:', err);
-      }
-    })();
 
     const redirectUrl = isPrivate
       ? `/crocoanonim/Plangere/privat/${uuid}`
@@ -264,17 +252,7 @@ app.post('/crocoanonim/plangeri/:id/comentarii', checkAuth, async (req, res) => 
     });
 
     // Trimitere email de notificare
-    (async () => {
-      try {
-        await sendEmail(
-          'braha.adrian.costin@gmail.com',
-          `Comentariu nou la plângerea ${plangereId}`,
-          `Verifică aici: http://localhost:3000/crocoanonim/Plangere/${plangereId}`
-        );
-      } catch (error) {
-        console.error('Email error:', error);
-      }
-    })();
+  
 
     res.redirect(`/crocoanonim/plangere/${plangereId}`);
   } catch (error) {
