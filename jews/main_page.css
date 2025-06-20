@@ -1,0 +1,228 @@
+body {
+    margin: 0;
+    background-color:  #18181B;;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #222; 
+    padding: 1em 2em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo {
+    font-weight: bold;
+    color: white;
+    font-size: 1.2em;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+    margin: 0;
+    padding: 0;
+  }
+  #home{
+    color: white;
+    text-decoration: none;
+    border: none;
+    background-color:transparent;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    transition: background-color 0.3s ease;
+  } 
+  #home:hover {
+    background-color: rgb(255, 0, 212);
+    color: black;
+  }
+
+  .nav-links li button {
+    color: white;
+    text-decoration: none;
+    border: none;
+    background-color:transparent;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    transition: background-color 0.3s ease;
+  }
+
+  #edu button:hover {
+    background-color: rgb(0, 191, 255);
+    color: black;
+  }
+  
+  #fr button:hover {
+    background-color: purple;
+  }
+  
+  #hr button:hover {
+    background-color: yellow;
+    color: black;
+  }
+  
+  #ip button:hover {
+    background-color: red;
+  }
+  
+  #it button:hover {
+    background-color: darkgreen;
+    color: white;
+  }
+  
+  #sisc button:hover {
+    background-color: darkblue;
+  }
+  
+  #content{
+    margin: 0 auto;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70vh;
+    width: 90vw;
+  }
+  #left{
+    margin: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-right: 5%;
+    width: 40vw;
+    background-color: white;
+    border-radius: 1em;
+    border: 2px solid black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  #left p{
+    width:90%;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+  #right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    background-color: white;
+    border-radius: 1em;
+    border: 2px solid black;
+    padding: 2em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .avatar-container {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 2em;
+  }
+  
+  .avatar-label {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .avatar-dropdown {
+    position: relative;
+  }
+  
+  .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #444;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ddd;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    white-space: nowrap;
+  }
+  
+  .avatar-dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  
+  .input-form {
+    margin-bottom: 1em;
+    width: 100%;
+  }
+  
+  .input-form input {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.3em;
+    border-radius: 0.5em;
+    border: 1px solid #999;
+  }
+  
+  .color-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    justify-content: center;
+    margin-bottom: 1em;
+  }
+  
+  .color-options input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    cursor: pointer;
+  }
+
+  .color-options input[type="radio"]:checked {
+    outline: 3px solid #000;         /* Visible black ring */
+    outline-offset: 2px;             /* Space between button and ring */
+    box-shadow: 0 0 5px 2px #00000066; /* Optional glow */
+    transform: scale(1.2);           /* Slightly enlarge for visibility */
+  }
+  
+  #red_label { background-color: red; }
+  #blue_label { background-color: blue; }
+  #yellow_label { background-color: yellow; }
+  #purpel_label { background-color: purple; }
+  #green_label { background-color: darkgreen; }
+  #black_label { background-color: black; }
+  #white_label { background-color: white; }
+  #pink_label { background-color: pink; }
+  #orange_label { background-color: orange; }
+  
+  #save {
+    padding: 0.5em 1.5em;
+    border: none;
+    border-radius: 0.5em;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #Save:hover {
+    background-color: #555;
+  }
+  
