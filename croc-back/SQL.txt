@@ -1,0 +1,41 @@
+CREATE TABLE PLANGERI (
+  id_plangere INT AUTO_INCREMENT PRIMARY KEY,
+  departament INT,
+  titlu VARCHAR(15),
+  short_description VARCHAR(40),
+  description VARCHAR(5000)
+);
+
+CREATE TABLE COMENTARII (
+  id_comentariu INT AUTO_INCREMENT PRIMARY KEY,
+  id_plangere INT,
+  description VARCHAR(5000),
+  FOREIGN KEY (id_plangere) REFERENCES PLANGERI(id_plangere)
+);
+
+
+INSERT INTO PLANGERI (departament, titlu, short_description, description)
+VALUES
+(1, 'penis', 'penis penis penis', 'penis'),
+(2, 'penis', 'penis penis penis', 'penis'),
+(3, 'penis', 'penis penis penis', 'penis'),
+(4, 'penis', 'penis penis penis', 'penis'),
+(5, 'penis', 'penis penis penis', 'penis'),
+(1, 'penis', 'penis penis penis', 'penis'),
+(2, 'penis', 'penis penis penis', 'penis'),
+(3, 'penis', 'penis penis penis', 'penis'),
+(4, 'penis', 'penis penis penis', 'penis'),
+(5, 'penis', 'penis penis penis', 'penis');
+
+INSERT INTO COMENTARII (id_plangere, description)
+VALUES
+(1, 'pula'),
+(2, 'pula'),
+(3, 'pula'),
+(4, 'pula'),
+(5, 'pula'),
+(6, 'pula'),
+(7, 'pula'),
+(8, 'pula'),
+(9, 'pula'),
+(10, 'pula');

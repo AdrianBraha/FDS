@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Item</title>
+</head>
+<body>
+    <link rel="stylesheet" href="/creazaPlangere.css">
+    <div class="grid-container">
+        <div class="plane">
+            <div class="grid"></div>
+            <div class="glow"></div>
+        </div>
+        <div class="plane">
+            <div class="grid"></div>
+            <div class="glow"></div>
+        </div>
+    </div>
+    <div class="form-container">
+        <form id="itemForm">
+            <h1>Zii ce ai pe suflet</h1>
+            
+            <div class="form-group">
+                <label for="titlu">Titlu:</label>
+                <input type="text" id="titlu" name="titlu" maxlength="15" required>
+                <span class="char-counter"><span id="titluCounter">0</span>/15</span>
+            </div>
+            
+            <div class="form-group">
+                <label for="scurta_descriere">Scurta Descriere:</label>
+                <input type="text" id="scurta_descriere" name="scurta_descriere" maxlength="40" required>
+                <span class="char-counter"><span id="scurtaCounter">0</span>/40</span>
+            </div>
+            
+            <div class="form-group">
+                <label for="descriere">Descriere:</label>
+                <div class="textarea-container">
+                    <textarea id="descriere" name="descriere" maxlength="5000" required></textarea>
+                    <span class="char-counter"><span id="descriereCounter">0</span>/5000</span>
+                </div>
+            </div>
+
+            <div class="form-group" style="margin-top: 1rem;">
+                <label for="private" style="display: flex; align-items: center; gap: 0.5em; font-weight: 600;">
+                  <input type="checkbox" id="private" name="private" value="true" />
+                  Privat
+                </label>
+              </div>
+            
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+    <script src="/creaza.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+    {
+        "users":[
+        {
+        "id": 1,
+        "username": "croco_1",
+        "password": "croco_1"
+        },
+        {
+        "id": 2,
+        "username": "croco_2",
+        "password": "croco_2"
+        },
+        {
+        "id": 3,
+        "username": "croco_3",
+        "password": "croco_3"
+        },
+        {
+        "id": 4, 
+        "username": "croco_4",
+        "password": "croco_4"
+        }, 
+        {
+        "id": 5,
+        "username": "croco_5",
+        "password": "croco_5"
+        }
+        
+    ]
+}
