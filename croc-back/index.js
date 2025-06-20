@@ -263,7 +263,6 @@ app.post('/crocoanonim/plangeri/:id/comentarii', checkAuth, async (req, res) => 
     });
   }
 });
-
 // Pornire server
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}/crocoanonim`);
